@@ -1,6 +1,10 @@
-var navLInks = document.getElementById("navLinks");
+var items = document.getElementById("menu");
+const btnOpen = document.getElementById("open");
+const btnClose = document.getElementById("close");
 function showMenu() {
-  navLInks.style.right = "0";
+  items.classList.toggle("hidden");
+  // btnClose.classList.toggle("hidden");
+  // btnClose.classList.toggle("hidden");
 }
 function hideMenu() {
   navLInks.style.right = "-200px";

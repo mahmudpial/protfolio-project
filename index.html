@@ -18,7 +18,7 @@
     <title>new website</title>
   </head>
   <body> 
-   <div class="all-section grid grid-cols-2 gap-4">
+   <div class="all-section grid lg:grid-cols-2 sm:gird-cols-1 w-full gap-4">
     <!-- main section start  --> 
     <main class="mx-auto max-w-7xl p-8">
       <!-- header section  -->
@@ -30,20 +30,20 @@
                 p-6 lg:px-0"
         >
           <div class="flex lg:flex-1">
-           
             <img class="h-9 w-9 mt-1"
                 src="icon-image/2754577_man_goatee_user_avatar_icon.png"
                 alt=""
-              /> </a
-            ><span></span>
+              />
+               </a>
             <h1 class="text-3xl mt-1 font-serif ">Zoro</h1>
           </div>
           <!-- nav list  -->
           <div class="nav-links" id="navLinks">
-            <!-- <i class="fa-sharp fa-solid fa-xmark invisible" onclick="hideMenu()"></i> -->
-            <ul class=" list flex flex-row space-x-6 
+          <!-- <i id="close" class="fa-sharp fa-solid hidden fa-xmark" onclick="hideMenu()"></i> -->
+            <i id="open" class="fa-solid fa-bars lg:hidden " onclick="showMenu()"></i>
+            <ul id="menu" class="list lg:flex lg:block hidden lg:space-x-6 
               marker:text-gray-300 font-serif">
-              <li ><a href="">Home</a></li>
+              <li class="list-disc"><a href="">Home</a></li>
               <li class="list-disc"><a href="">Project</a></li>
               <li class="list-disc"><a href="">Blog</a></li>
               <li class="list-disc"><a href="">Contact</a></li>
